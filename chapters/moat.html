@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html style="width:100%;height:100%;">
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <script src="moat.js"></script>
+    </head> 
+    <body style="width:100%;height:100%;margin:0;" onLoad="moatColorRandom()">
+        <h1>Moat</h1>
+        <div class="topnav">
+            <a href="../index.html">Home</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../howtoplay.html">How to Play</a>
+            <a href="../about.html">About</a>
+        </div> 
+        <h3>Upon Reaching the Crumbling Tower...</h3>
+        <p>A moat surrounds its base, bubbling and caustic. A leaf drifts into the moat and sizzles away in a puff of brown smoke. Nearby, a boat lies pushed up onto the shore. The moat would surely eat through its hull too before you could reach the other side. </p>
+        <p>Perhaps there's a way to neutralize the moat? Barrels of two compounds sit on the shore. Dropping a little of one compound into the moat, its color shifts.</p>
+        <p>Click on a barrel to add some of it's contents to the moat. When the moat is neutralized, click the button to set sail.</p>
+        <img src="crumblingtower.png" style="width:50%; position: relative; z-index: 2;" class="center" >
+        <!--<svg width="100%" height="50%" style="position: absolute;  z-index: 1; left: 0; top: 75%;">
+            <rect x="0" y="0" width="100%" height="100%" fill="#fe0002"/>
+        </svg>-->
+        <svg style="position: absolute; z-index: 1; left: 0; top: 75%;" width="100%" height="100%">
+            <ellipse rx="50%" ry="25%" cx="50%" cy="50%"  id="moat"/><!--#ff5757--> <!--fill="#f75c80"-->
+            <!--<path d="m50% 50% c55% 55% z" style="fill:none;stroke:green;stroke-width:20"/>-->
+        </svg>
+        <div style="display: block; float: left; z-index: 2; bottom: 0; position: absolute; top:135%">
+            <img src="acidbarrel1.png" style="width: 30%;" class="left" onclick="addAcid()">
+            <img src="basebarrel1.png" style="width: 30%;" class="right" onclick="addBase()">
+            <img src="setsail.png" style="width: 25%; height: 25%;" class="center" onclick="setSail()">
+        </div>
+        <!--<img src="setsail.png" class="center" style="width: 25%; height: 25%; z-index: 3; bottom: 0; position: absolute; top:200%" onclick="setSail()">-->
+        <div id="correct" style="display: none;  position: absolute;bottom: 0; top:200%;">
+            <p>The moat has been neutralized</p>
+            <a href="newmanportal.html" class="chLink"><p>Take the boat across.</p></a>
+        </div>
+        <div id="wrong" style="display: none; position: absolute;bottom: 0; top: 200%;">
+            <p>Your boat would not survive the journey.</p>
+            <p>Try again.</p>
+        </div>
+    </body>
+</html> 

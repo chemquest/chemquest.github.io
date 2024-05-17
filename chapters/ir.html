@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <script src="ir.js"></script>
+    </head> 
+    <body>
+        <h1>Sensing the End</h1>
+        <div class="topnav">
+            <a href="../index.html">Home</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../howtoplay.html">How to Play</a>
+            <a href="../about.html">About</a>
+        </div> 
+        <h3>The Nose on the Wall</h3>
+        <img src="nose1.png" class="center">
+        <p>*sniff* *sniff*</p>
+        <p>The nose then speaks to you, although it is unclear how it is able to vocalize.</p>
+        <p>"*sniff* Ahhh *sniff*. You there. Bring me the scent I desire if you wish to proce- *sniff* -ed."</p>
+        <p>A scroll of paper slides out of the left nostril and drops to the floor.</p>
+        <img src="scroll.png" class="center">
+        <p>A variety of potions lie on a table nearby, each labeled with the structure of a molecule.</p>
+        <p>Click on a potion to offer it to the nose. (Help: scroll down to bottom to see if correct/incorrect)</p>
+        <div style="display: block; float: left; ">
+            <img src="potions/potioncitral.png" style="width: 45%;" onclick="potionIncorrect()">
+            <img src="potions/potioneucalyptol.png" style="width: 45%;" onclick="potionIncorrect()">
+            <img src="potions/potionlimonene.png" style="width: 45%;" onclick="potionIncorrect()">
+            <img src="potions/potionlinalool.png" style="width: 45%;" onclick="potionCorrect()">
+        </div>
+        <div id="correct" style="display: none;">
+            <p>"Mmmmm. Wonderful. Thank you"</p>
+            <p>The nose fades away, revealing an opening behind where it had been.</p>
+            <a href="chiral.html" class="chLink"><p>To the End.</p></a>
+        </div>
+        <div id="wrong" style="display: none;">
+            <p>Try again.</p>
+        </div>
+    </body>
+</html> 

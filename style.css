@@ -1,0 +1,100 @@
+html {
+    background: url("coollookingthingv8maybe.png") repeat center center fixed; 
+    background-size: cover;
+}
+body {
+    background: url("coollookingthingv8maybe.png") repeat center center fixed; 
+    background-size: cover;
+    font-family: text;
+    color: white;
+}
+@font-face {
+    font-family: Title;
+    src: url(bloodandblade.ttf);
+}
+@font-face {
+    font-family: text;
+    src: url(kawoszeh.ttf);
+}
+h1 {
+    font-family: Title;
+    text-align: center;
+    color: #4fffad;
+    font-size: xx-large;
+    background: rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h2 {
+  /*font-family: Title;*/
+  color: #4fffad;
+
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    /*float: none;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #2f9d61;
+    color: black;
+  }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.right {
+  width: 50%;
+  float: right;
+}
+.otherright {
+  display: block;
+  width: 50%;
+  float: right;
+}
+.left {
+  width: 50%;
+  float: left;
+}
+.chLeft {
+  float: left;
+}
+h3 {
+  font-family: Title;
+}
+
+.chLink {
+  color: #2f9d61;
+}
+
+.gameMenu {
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+.gameMenu a {
+  float: left;
+  display: block;
+}

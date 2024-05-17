@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <script src="config.js"></script>
+    </head> 
+    <body>
+        <h1>Revealing the Cure</h1>
+        <div class="topnav">
+            <a href="../index.html">Home</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../howtoplay.html">How to Play</a>
+            <a href="../about.html">About</a>
+        </div> 
+        <h3>Parchment with Strange Markings</h3>
+        <p>At last, the last room. Only a pillar stands in the middle of the room, a piece of parchment atop it. On the floor beside the pillar are what look like pieces of glass, one labeled R, one labeled S.</p>
+        <p>As well as a note: </p>
+        <img src="curetest.png" class="center" style="width: 25%;">
+        <p>The parchment itself is unreadable with your bare eyes.</p>
+        <img src="thecureunreadable.png" class="center">
+        <p>Which glass do you look at the parchment through?</p>
+        <div style="display: block; float: left; ">
+            <img src="rconfig.png" style="width: 25%;" onclick="r()">
+            <img src="sconfig.png" style="width: 25%;" onclick="s()">
+        </div>
+        <br>
+        <div id="correct" style="display: none;">
+            <p>Arriving at the end of your journey, you discover the formula for penicillin.</p>
+            <h2>The End. Good Job. etc etc.. Off with you.</h2>
+            <h2>Best of Luck in your Future Travels, Wizard. May you find this cure useful in them.</h2>
+            <img src="penicillin.png" class="center">
+        </div>
+        <div id="wrong" style="display: none;">
+            <p>Try again.</p>
+        </div>
+    </body>
+</html> 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <script src="newmandoor.js"></script> 
+    </head> 
+    <body>
+        <h1>Portal to Beyond</h1>
+        <div class="topnav">
+            <a href="../index.html">Home</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../howtoplay.html">How to Play</a>
+            <a href="../about.html">About</a>
+        </div> 
+        <p>The passage around is dark and damp, leading further into the ruined tower. Deeper and deeper, below the ground’s surface. You continue your descent, unsure of which direction you are heading after the many twists and turns. A faint glow appears ahead. As you approach, a portal materializes, locked behind a gate.</p>
+        <p>This portal is blocked by an energetic door. To unlock it, configure the molecule to be in its lowest energy state. Click the door to rotate. Then, press the button.</p>
+        <img src="newmandoorframes/newmandoorframe1.png" style="width:50%;" class="center" id="newmandoor" onclick="changeImage()">
+        <img src="button.png" class="right" style="width:10%;" id="btn" onClick="checkEnergy()">
+        <div id="correct" style="display: none;">
+            <p>The bars blocking the portal fall away and you are free to proceed.</p>
+            <a href="ir.html" class="chLink"><p>Next Chapter...</p></a> <!--change to actual next chapter later-->
+        </div>
+        <div id="wrong" style="display: none;">
+            <p>Try again.</p>
+        </div>
+        <!--<div class="gameMenu">
+            <a><img src="../cauldron.png" width="120" height="100"></a>
+            <a><img src="../spelltome.png" width="100" height="100"></a>
+        </div>-->
+    </body>
+</html> 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+        <script src="backside.js"></script> 
+    </head> 
+    <body>
+        <h1>A Troubling Encounter</h1>
+        <div class="topnav">
+            <a href="../index.html">Home</a>
+            <a href="../chapters.html">Chapters</a>
+            <a href="../howtoplay.html">How to Play</a>
+            <a href="../about.html">About</a>
+        </div> 
+        <p>After departing from your tower, you walk through the forest for some time in the direction of Zyerko. The forest is quiet and still save for the scurrying of small animals.</p>
+        <p>The scurrying intensifies, becomes panicked. A miniature stampede rushes through the forest, splitting around your feet before diving into the safety of the far shadows between trees.</p>
+        <p>What could have scared them so much? A question not long without answer.</p>
+        <p>*CRASH* *WOOSH* *THUD*</p>
+        <p>A massive some sort of something comes crashing through the forest, revealing itself to be a type of chemical apparition!</p>
+        <p>This creature may be defeated by attacking from the right angle. Perform a backside attack to hit its weak spot.</p>
+        <p>Rotate the molecule by clicking on it, then when it is in position, perform a nucleophilic attack by clicking on the nucleophile.</p>
+        <img src="nucsword.png" class="left" style="width:50%;" id="nuc" onclick="nucAttack()">
+        <img src="backsideattackrotations/apparitionr1.png" class="right" style="width:50%; height:50%;" id="apparition" onclick="changeImage()">
+        <div id="correct" style="display: none;">
+            <p>The apparition is defeated. Continue on.</p>
+            <a href="moat.html" class="chLink"><p>Next Chapter...</p></a> <!--change to actual next chapter later-->
+        </div>
+        <div id="wrong" style="display: none;">
+            <p>Try again.</p>
+        </div>
+        <!--<div class="gameMenu">
+            <a><img src="../cauldron.png" width="120" height="100"></a>
+            <a><img src="../spelltome.png" width="100" height="100"></a>
+        </div>-->
+    </body>
+</html> 

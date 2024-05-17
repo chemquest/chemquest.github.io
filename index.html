@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function hover(element) {
+            element.setAttribute('src', 'cauldrongif.gif');
+        }
+
+        function unhover(element) {
+            element.setAttribute('src', 'cauldronplay.png');
+        }
+        </script>
+    </head> 
+    <body>
+        <h1>Chem Quest</h1>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="chapters.html">Chapters</a>
+            <a href="howtoplay.html">How to Play</a>
+            <a href="about.html">About</a>
+        </div> 
+        <div id="playBtn">
+        <a href="chapters/ch1.html"><img src="cauldronplay.png" alt="main menu image with cauldron" style="width:50%;" class="center" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+        </div>
+    </body>
+</html> 
